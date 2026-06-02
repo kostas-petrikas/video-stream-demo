@@ -1,0 +1,14 @@
+[package]
+name = "signal_server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+certs = { path = "../certs" }
+signal_proto = { path = "../signal_proto" }
+tokio = { workspace = true, features = ["full"] }
+async-broadcast = "0.7"
+s2n-quic = { workspace = true }
+hashbrown = { workspace = true }
+thiserror = { workspace = true }
+error-stack = { workspace = true }

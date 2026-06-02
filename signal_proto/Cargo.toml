@@ -1,0 +1,12 @@
+[package]
+name = "signal_proto"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+postcard = { version = "1", default-features = false, features = ["alloc"] }
+rtc = { workspace = true }
+futures-util = "0.3"
+thiserror = { workspace = true }
+async-stream = "0.3"
+serde = { workspace = true, features = ["derive"] }

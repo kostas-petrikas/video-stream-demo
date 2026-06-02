@@ -1,0 +1,25 @@
+[package]
+name = "gui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+iced = { workspace = true, features = ["wgpu", "wgpu-bare", "tokio"] }
+s2n-quic = { workspace = true }
+thiserror = { workspace = true }
+error-stack = { workspace = true }
+certs = { path = "../certs" }
+signal_proto = { path = "../signal_proto" }
+video = { path = "../video" }
+iced_wgpu_video = { path = "../iced_wgpu_video" }
+log = { workspace = true }
+pin-project-lite = { workspace = true }
+webrtc = { workspace = true }
+rtc = { workspace = true }
+tokio = { workspace = true, features = ["sync"] }
+async-trait = "0.1"
+rand = "0.10"
+bytes = { workspace = true }
+env_logger = "0.11"
+async-channel = { workspace = true }
+portable-atomic = { workspace = true }

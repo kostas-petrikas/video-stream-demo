@@ -1,0 +1,32 @@
+[workspace]
+resolver = "3"
+members = [
+    "signal_server",
+    "signal_proto",
+    "certs",
+    "gui",
+    "video",
+    "iced_wgpu_video"
+]
+
+[workspace.dependencies]
+s2n-quic = "1"
+thiserror = "2"
+error-stack = "0.6"
+hashbrown = "0.16"
+clap = { version = "4.5", features = ["derive"] }
+webrtc = "0.20.0-alpha.1"
+rtc = "0.20.0-alpha.1"
+bytemuck = "1"
+iced = { version = "0.14", default-features = false }
+iced_wgpu = "0.14"
+tokio = { version = "1", default-features = false }
+ffmpeg-next = "8"
+log = "0.4"
+pin-project-lite = "0.2"
+serde = "1"
+spin = "0.10"
+bytes = "1"
+futures = "0.3"
+async-channel = "2.5"
+portable-atomic = "1"
